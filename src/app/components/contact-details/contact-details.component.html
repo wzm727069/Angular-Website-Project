@@ -1,0 +1,41 @@
+
+<div class="container mt-3" *ngIf="isNotEmpty()">
+    <div class="row">
+        <div class="col">
+            <p class="h3">{{contact.name.first}} {{contact.name.last}}</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquam maiores libero suscipit inventore, id, alias, obcaecati placeat odit tempora asperiores molestias nam unde recusandae nihil rem quia pariatur laboriosam.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="isNotEmpty()">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img [src]="contact.picture.large">
+                        </div>
+                        <div class="col-md-9">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Age: {{contact.dob.age}}
+                                </li>
+                                <li class="list-group-item">
+                                    Email: {{contact.email}}
+                                </li>
+                                <li class="list-group-item">
+                                    Location: {{contact.location.city}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a routerLink="/contacts" class="btn btn-secondary btn-sm">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

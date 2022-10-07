@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
+}
+.btn{
+    margin: 5px;
+}
+
+.landing-page{
+    background: white url("assets/img/bg1.jpg") no-repeat scroll center;
+    background-size: cover;
+    height: 100vh;
+    color: antiquewhite;
+}
+
+.wrapper{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
